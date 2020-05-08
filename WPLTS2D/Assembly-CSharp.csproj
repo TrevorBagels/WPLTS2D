@@ -55,30 +55,126 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CharacterModelData.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Code\CameraController.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Code\GUIControlsFREE.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Code\IKHandsFREE.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Code\RPGCharacterControllerFREE.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Code\RPGCharacterInputControllerFREE.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Code\RPGCharacterMovementControllerFREE.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Code\RPGCharacterWeaponControllerFREE.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\Bloom.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\ImageEffectBase.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\ImageEffects.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\PostEffectsBase.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\PostEffectsHelper.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\Quads.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\ScreenOverlay.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Scripts\Triangles.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\Scripts\Gravity.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\Scripts\SimpleStateMachine.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperCollisionType.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
+     <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Math3d.cs" />
+     <Compile Include="Assets\Pixelate\PixelateImageEffect.cs" />
      <Compile Include="Assets\Scripts\GM.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PythonExample.cs" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\Pixelate\Pixelation.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Shaders\RoundColor.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Imported\BodyGuards\ReadMe.txt.txt" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\README.txt" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Python\testfile.txt" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -264,34 +360,34 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.7f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="IKVM.Reflection">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Assets/Plugins/IKVM.Reflection.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/IKVM.Reflection.dll</HintPath>
  </Reference>
  <Reference Include="IronPython">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Assets/Plugins/IronPython.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/IronPython.dll</HintPath>
  </Reference>
  <Reference Include="IronPython.Modules">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Assets/Plugins/IronPython.Modules.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/IronPython.Modules.dll</HintPath>
  </Reference>
  <Reference Include="Microsoft.Dynamic">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Assets/Plugins/Microsoft.Dynamic.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/Microsoft.Dynamic.dll</HintPath>
  </Reference>
  <Reference Include="Microsoft.Scripting">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Assets/Plugins/Microsoft.Scripting.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/Microsoft.Scripting.dll</HintPath>
  </Reference>
  <Reference Include="IronPython.SQLite">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Assets/Plugins/DLLs/IronPython.SQLite.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/DLLs/IronPython.SQLite.dll</HintPath>
  </Reference>
  <Reference Include="IronPython.Wpf">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Assets/Plugins/DLLs/IronPython.Wpf.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/DLLs/IronPython.Wpf.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/there/Documents/Productive/Unity Projects/WPLTS2D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
