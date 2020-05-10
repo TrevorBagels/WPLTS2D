@@ -25,7 +25,16 @@ public class GM : MonoBehaviour
         print(Master.GetTest());
 
         //Load into main menu
-
+        //for now we load straight into the game
+        OnLoadLevel();
+    }
+    void OnLoadLevel()
+    {
+        Transform cam = Camera.main.transform;
+        GameObject character = Instantiate(Resources.Load<GameObject>("Prefabs/Character"));
+        character.transform.position = new Vector3(cam.position.x, cam.position.y, 0);
+        PlayerMovement mvmt = character.AddComponent<PlayerMovement>();
+        mvmt.Camera = cam;
     }
     // Update is called once per frame
     void Update()

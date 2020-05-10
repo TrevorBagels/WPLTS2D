@@ -1,8 +1,9 @@
 import random
 class TTRPG:
-	def __init__(self):
+	def __init__(self, master):
 		self.skills = {}
-		with open("SkillsData.txt", "r") as f:
+		self.m = master
+		with open(master.datapath + "SkillsData.txt", "r") as f:
 			for x in f.read().split("\n"):
 				print(x)
 				skill = x.split(" - ")[0]

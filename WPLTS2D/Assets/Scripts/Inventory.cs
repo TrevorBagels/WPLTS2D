@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        I = FindObjectOfType<GM>().Master.AddInventory("Player");
+       
     }
 
     // Update is called once per frame

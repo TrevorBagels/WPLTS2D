@@ -8,7 +8,7 @@ class Master:
 		self.datapath = datapath
 		self.characters = {}
 		self.GM = None
-		self.TTRPG = TTRPG()
+		self.TTRPG = TTRPG(self)
 		print("Lore Master Initiated.")
 		with open(self.datapath + "logs.txt", "w+") as f:
 			f.write("WPLTS Python Log File\n\n")

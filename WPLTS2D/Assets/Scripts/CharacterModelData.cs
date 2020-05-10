@@ -30,6 +30,8 @@ public class CharacterModelData : MonoBehaviour
     }
     void SetRotation()
     {
+        Upper.SetBool("HandOccupied", true);
+        Upper.enabled = false;
         Vector3 p = Vector3.zero;
         Vector3 p2 = Vector3.zero;
         if (IsPlayer)
@@ -59,6 +61,13 @@ public class CharacterModelData : MonoBehaviour
     {
         Lower.SetBool("Air", !IsGrounded());
         Lower.SetBool("Running", Moving);
-        SetRotation();
+        if(HandOccupied)
+            SetRotation();
+        else
+        {
+            Upper.enabled = true;
+            Upper.SetBool("HandOccupied", false);
+            Upper.SetBool("Running", Moving);
+        }
     }
 }

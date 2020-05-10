@@ -1,5 +1,5 @@
 WPLTS Python Log File
 
 
-2020-05-09 14:02:43.563845	Datapath: 
-2020-05-09 14:02:43.565840	Path: ['C:\\Users\\there\\Documents\\GitHub\\WPLTS2D\\WPLTS2D\\Assets\\Python', 'c:\\users\\there\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages', 'C:\\Users\\there\\AppData\\Local\\Programs\\Python\\Python37-32\\python37.zip', 'C:\\Users\\there\\AppData\\Local\\Programs\\Python\\Python37-32\\DLLs', 'C:\\Users\\there\\AppData\\Local\\Programs\\Python\\Python37-32\\lib', 'C:\\Users\\there\\AppData\\Local\\Programs\\Python\\Python37-32', 'c:\\users\\there\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages/Python']
+2020-05-09 15:15:07.342000	Datapath: Assets/Python/
+2020-05-09 15:15:07.356000	Path: ['.', 'C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets', 'C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets\\Plugins\\Lib\\', 'C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Python']

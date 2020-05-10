@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform Camera;
     Vector3 cameraOffset = new Vector3(0, 2f);
     float Zoom = 6;
-    public Vector3 Speed = new Vector3(3, 5, 0);
+    public Vector3 Speed = new Vector3(6, 5, 0);
     bool Direction = true; //t=right, f=left
     Rigidbody rb;
     CharacterModelData anim;
