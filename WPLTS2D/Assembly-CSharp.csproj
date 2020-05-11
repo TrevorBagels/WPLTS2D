@@ -777,6 +777,9 @@
  <Reference Include="Unity.2D.Tilemap.Editor">
  <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Enhancer.Editor">
+ <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Enhancer.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
@@ -785,9 +788,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Enhancer.Editor">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Enhancer.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -9,8 +9,7 @@ public class CharacterModelData : MonoBehaviour
     public Transform Arm;
     public Transform Hand;
     public Transform Bottom;
-    public Animator Upper;
-    public Animator Lower;
+    public Animator Body;
 
     public bool Moving;
     public bool HandOccupied;
@@ -30,8 +29,6 @@ public class CharacterModelData : MonoBehaviour
     }
     void SetRotation()
     {
-        Upper.SetBool("HandOccupied", true);
-        Upper.enabled = false;
         Vector3 p = Vector3.zero;
         Vector3 p2 = Vector3.zero;
         if (IsPlayer)
@@ -47,6 +44,7 @@ public class CharacterModelData : MonoBehaviour
         diff.Normalize();
         float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         Arm.rotation = Quaternion.Euler(0f, 0f, rot_z);
+        Arm.GetChild(0).localEulerAngles = new Vector3(0, 0, 0);
         if(direction == true)
         {
             transform.eulerAngles = new Vector3(0, 90, 0);
@@ -57,17 +55,11 @@ public class CharacterModelData : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        Lower.SetBool("Air", !IsGrounded());
-        Lower.SetBool("Running", Moving);
+        Body.SetBool("Air", !IsGrounded());
+        Body.SetBool("Running", Moving);
         if(HandOccupied)
             SetRotation();
-        else
-        {
-            Upper.enabled = true;
-            Upper.SetBool("HandOccupied", false);
-            Upper.SetBool("Running", Moving);
-        }
     }
 }

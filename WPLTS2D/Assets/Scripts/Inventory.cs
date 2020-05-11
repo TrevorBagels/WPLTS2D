@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        Slots = GameObject.Find(transform.root.gameObject.name + "/Screen/Inventory/Panel/Slots").transform;
     }
 
     // Update is called once per frame
