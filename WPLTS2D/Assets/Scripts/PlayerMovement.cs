@@ -29,6 +29,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector3(rb.velocity.x, Speed.y);
         }
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            anim.Body.Play("Roll", 1);
+        }
     }
     void FixedUpdate()
     {

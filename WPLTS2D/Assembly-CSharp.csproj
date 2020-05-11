@@ -88,7 +88,6 @@
      <Compile Include="Assets\Scripts\GM.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\PythonExample.cs" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\GlobalFog.shader" />
@@ -97,14 +96,12 @@
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\frag_ao.cginc" />
-     <None Include="Assets\Python\testfile.txt" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
-     <None Include="Assets\Python\Skills.txt" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SSAOShader.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
@@ -114,7 +111,6 @@
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ConvertDepth.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
-     <None Include="Assets\Python\logs.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CameraMotionBlur.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
@@ -143,7 +139,6 @@
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\Python\SkillsData.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
@@ -359,27 +354,6 @@
  </Reference>
  <Reference Include="UnityEditor">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
- </Reference>
- <Reference Include="IKVM.Reflection">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/IKVM.Reflection.dll</HintPath>
- </Reference>
- <Reference Include="IronPython">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/IronPython.dll</HintPath>
- </Reference>
- <Reference Include="IronPython.Modules">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/IronPython.Modules.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Dynamic">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/Microsoft.Dynamic.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Scripting">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/Microsoft.Scripting.dll</HintPath>
- </Reference>
- <Reference Include="IronPython.SQLite">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/DLLs/IronPython.SQLite.dll</HintPath>
- </Reference>
- <Reference Include="IronPython.Wpf">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Assets/Plugins/DLLs/IronPython.Wpf.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
