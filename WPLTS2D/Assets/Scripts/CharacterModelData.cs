@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class CharacterModelData : MonoBehaviour
 {
     public bool IsPlayer;
@@ -19,6 +19,7 @@ public class CharacterModelData : MonoBehaviour
     bool jumped = false;
     float jumpmax; //new jump point
     float jumplow;//initial jump point
+    NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,13 +81,26 @@ public class CharacterModelData : MonoBehaviour
         Body.SetBool("Running", Speed > 1);
         Body.SetBool("Moving", Moving);
         Body.SetBool("Air", !IsGrounded());
+        if(!IsPlayer)
+        {
+            if (agent == null)
+                agent = GetComponent<NavMeshAgent>();
+            Moving = Mathf.Abs(agent.velocity.x) > .5f;
+            Body.SetFloat("MovementX", Mathf.Clamp(Mathf.Abs(agent.desiredVelocity.x), -1, 1));
+            if(agent.velocity.sqrMagnitude > Mathf.Epsilon)
+            {
+                var lookrot = Quaternion.LookRotation(agent.velocity.normalized);
+                lookrot.x = 0;
+                lookrot.z = 0;
+                transform.rotation = lookrot;
+            }
+            return;
+        }
         if(jumped)
         {
             jumpmax = Mathf.Clamp(transform.position.y, jumpmax, Mathf.Infinity);
             jumplow = Mathf.Clamp(transform.position.y, Mathf.NegativeInfinity, jumplow);
             Body.SetBool("JumpRoll", (jumpmax - jumplow) > 1.95);
-
-
         }
         if(IsPlayer)
         {

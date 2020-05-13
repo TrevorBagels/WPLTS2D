@@ -44,6 +44,7 @@ public class GM : MonoBehaviour
         character.transform.position = new Vector3(cam.position.x, cam.position.y, 0);
         PlayerMovement mvmt = character.AddComponent<PlayerMovement>();
         mvmt.Camera = cam;
+        character.GetComponent<CharacterModelData>().IsPlayer = true;
     }
     // Update is called once per frame
     void Update()
