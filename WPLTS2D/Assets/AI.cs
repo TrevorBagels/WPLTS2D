@@ -21,6 +21,7 @@ public class AI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         Wander();
     }
+
     public void GoTo(Vector3 target)
     {
         currentTarget = target;

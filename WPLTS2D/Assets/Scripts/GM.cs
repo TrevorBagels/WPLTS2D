@@ -18,6 +18,9 @@ public class GM : MonoBehaviour
         //Load into main menu
         //for now we load straight into the game
         OnLoadLevel();
+        CreateAI(transform.position);
+        CreateAI(transform.position + new Vector3(15, 0, 0));
+
     }
     public static Config GetConfig()
     {
@@ -45,6 +48,17 @@ public class GM : MonoBehaviour
         PlayerMovement mvmt = character.AddComponent<PlayerMovement>();
         mvmt.Camera = cam;
         character.GetComponent<CharacterModelData>().IsPlayer = true;
+    }
+    void CreateAI(Vector3 position)
+    {
+        GameObject character = Instantiate(Resources.Load<GameObject>("Prefabs/Character"));
+        character.transform.position = position;
+        var nav = character.AddComponent<UnityEngine.AI.NavMeshAgent>();
+        nav.speed = 1.7f;
+        nav.angularSpeed = 10000f;
+        nav.height = 1.7f;
+        nav.radius = .3f;
+        AI ai = character.AddComponent<AI>();
     }
     // Update is called once per frame
     void Update()
