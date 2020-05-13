@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterModelData : MonoBehaviour
 {
     public bool IsPlayer;
-    bool direction;
+    public bool direction;
     Rigidbody rb;
     public Transform Arm;
     public Transform Hand;
@@ -16,6 +16,9 @@ public class CharacterModelData : MonoBehaviour
     public int Speed = 1;
     public bool HandOccupied;
     float distToGround;
+    bool jumped = false;
+    float jumpmax; //new jump point
+    float jumplow;//initial jump point
     // Start is called before the first frame update
     void Start()
     {
@@ -25,15 +28,23 @@ public class CharacterModelData : MonoBehaviour
     public bool IsGrounded()
     {
         RaycastHit hit;
-        if(Physics.Raycast(transform.position, -Vector3.up, out hit, distToGround + .05f))
+        if(Physics.Raycast(transform.position, -Vector3.up, out hit, distToGround + .15f))
         {
-            Debug.Log(hit.transform.gameObject.name);
+           // Debug.Log(hit.transform.gameObject.name);
             return true;
         }
         return false;
     }
+    public void OnLand()
+    {
+        jumped = false;
+
+    }
     public void Jump()
     {
+        jumped = true;
+        jumpmax = transform.position.y;
+        jumplow = transform.position.y;
         Body.Play("Jump");
     }
     void SetRotation()
@@ -49,7 +60,7 @@ public class CharacterModelData : MonoBehaviour
             direction = true;
         else
             direction = false;
-        Vector3 diff = p - p2;
+        Vector3 diff = p2 - p;
         diff.Normalize();
         float addtox = 0;
         float multiplyz = 1;
@@ -60,15 +71,8 @@ public class CharacterModelData : MonoBehaviour
         }
         float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         Arm.rotation = Quaternion.Euler(0f-addtox, 0f, rot_z*multiplyz);
-        Arm.GetChild(0).localEulerAngles = new Vector3(0, 0, 0);
-        if(direction == true)
-        {
-            transform.eulerAngles = new Vector3(0, 90, 0);
-        }
-        else
-        {
-            transform.eulerAngles = new Vector3(0, 90 + 180, 0);
-        }
+        Arm.GetChild(0).localEulerAngles = new Vector3(-90, 0, 0);
+
     }
     // Update is called once per frame
     void LateUpdate()
@@ -76,6 +80,14 @@ public class CharacterModelData : MonoBehaviour
         Body.SetBool("Running", Speed > 1);
         Body.SetBool("Moving", Moving);
         Body.SetBool("Air", !IsGrounded());
+        if(jumped)
+        {
+            jumpmax = Mathf.Clamp(transform.position.y, jumpmax, Mathf.Infinity);
+            jumplow = Mathf.Clamp(transform.position.y, Mathf.NegativeInfinity, jumplow);
+            Body.SetBool("JumpRoll", (jumpmax - jumplow) > 1.95);
+
+
+        }
         if(IsPlayer)
         {
             float d = 1;
@@ -86,5 +98,13 @@ public class CharacterModelData : MonoBehaviour
         }
         if(HandOccupied)
             SetRotation();
+        if (direction == true)
+        {
+            transform.eulerAngles = new Vector3(0, 90, 0);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0, 90 + 180, 0);
+        }
     }
 }
