@@ -18,8 +18,6 @@ public class GM : MonoBehaviour
         //Load into main menu
         //for now we load straight into the game
         OnLoadLevel();
-        CreateAI(transform.position);
-        CreateAI(transform.position + new Vector3(15, 0, 0));
 
     }
     public static Config GetConfig()
@@ -48,6 +46,19 @@ public class GM : MonoBehaviour
         PlayerMovement mvmt = character.AddComponent<PlayerMovement>();
         mvmt.Camera = cam;
         character.GetComponent<CharacterModelData>().IsPlayer = true;
+        if(GameObject.Find("PlayerSpawn"))
+        {
+            character.transform.position = GameObject.Find("PlayerSpawn").transform.position;
+            Destroy(GameObject.Find("PlayerSpawn"));
+        }
+        if(GameObject.Find("Enemies"))
+        {
+            foreach(Transform t in GameObject.Find("Enemies").GetComponentsInChildren<Transform>())
+            {
+                CreateAI(t.transform.position);
+                Destroy(t.gameObject);
+            }
+        }
     }
     void CreateAI(Vector3 position)
     {

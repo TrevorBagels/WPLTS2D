@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     Conf.PlayerConfig config;
     float timestuck = 0f;
     Vector3 stuckpos;
+    float airtime = 0f;
+    int VaultLevel = 0;
     void Awake()
     {
         config = FindObjectOfType<GM>().config.Player;
@@ -35,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void JumpStuff()
     {
-        if (Input.GetButtonDown("Jump") && anim.IsGrounded())
+        if(Input.GetButton("Jump") && anim.IsGrounded())
         {
             //check if we're trying to vault over something
             RaycastHit hit;
@@ -44,10 +46,20 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (hit.transform.gameObject.tag == "Vault")
                 {
+                    VaultLevel = 1;
+                    anim.Body.Play("Vault");
+                    return;
+                }
+                if (hit.transform.gameObject.tag == "VaultLong")
+                {
+                    VaultLevel = 2;
                     anim.Body.Play("Vault");
                     return;
                 }
             }
+        }
+        if (Input.GetButton("Jump") && anim.IsGrounded())
+        {
             //create upwards velocity
             rb.velocity = new Vector3(rb.velocity.x, Speed.y);
             anim.Jump();
@@ -87,6 +99,19 @@ public class PlayerMovement : MonoBehaviour
         c.center = new Vector3(0, 0.89f, 0);
         InAir = false;
     }
+    void StuckFix(bool grounded)
+    {
+        if (!grounded && Mathf.Abs(transform.position.y - stuckpos.y) < .001f)
+            timestuck += Time.deltaTime;
+        else
+            timestuck = 0f;
+        stuckpos = transform.position;
+        if (timestuck > .05f)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, Speed.y);
+            timestuck = 0f;
+        }
+    }
     void FixedUpdate()
     {
         //align camera
@@ -97,25 +122,30 @@ public class PlayerMovement : MonoBehaviour
             return;
         //initialize important variables
         bool grounded = anim.IsGrounded();
-        if (!grounded && Vector3.Distance(stuckpos, transform.position) < .001f)
-            timestuck += Time.deltaTime;
+        //fix player when stuck
+        StuckFix(grounded);
+        if (!grounded)
+            airtime += Time.deltaTime;
         else
-            timestuck = 0f;
-        stuckpos = transform.position;
-        if (timestuck > .25f)
-        {
-            rb.velocity = new Vector3(rb.velocity.x, Speed.y);
-            timestuck = 0f;
-        }
+            airtime = 0f;
         float dir = GetDir();
-
+        if(airtime > .15f)
+            if(!anim.Body.GetCurrentAnimatorStateInfo(0).IsName("Jump") && !anim.Body.GetCurrentAnimatorStateInfo(0).IsName("Fall") && !anim.Body.GetCurrentAnimatorStateInfo(0).IsName("Land"))
+            {
+                //treat this as if we just jumped
+                anim.AccountForFall();
+                anim.Body.Play("Fall");
+            }
         if (grounded)//only modify horizontal movement if we're on the ground
             hormov = Input.GetAxis("Horizontal");
         //if we're vaulting over something
         if (anim.Body.GetCurrentAnimatorStateInfo(0).IsName("Vault"))
         {
             rb.isKinematic = true;
-            transform.position = transform.position + new Vector3(Time.deltaTime * 2.25f * dir * 1.5f, 0);
+            if(VaultLevel == 1)
+                transform.position = transform.position + new Vector3(Time.deltaTime * 2.25f * dir * 1.5f, 0);
+            if(VaultLevel == 2)
+                transform.position = transform.position + new Vector3(Time.deltaTime * 2.85f * dir * 1.5f, 0);
             return;
         }
         rb.isKinematic = false;

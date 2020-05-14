@@ -47,9 +47,21 @@ public class CharacterModelData : MonoBehaviour
         }
 
     }
+    void SetLowWeight()
+    {
+        foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
+        {
+            rb.mass = .05f;
+        }
+    }
     //true for living, false for dead
     void SetJointsState(bool state)
     {
+        if(state == false)
+        {
+            Invoke("SetLowWeight", .5f);
+        }
+        
         Rigidbody[] rbs = GetComponentsInChildren<Rigidbody>();
         foreach(Rigidbody rb in rbs)
         {
@@ -84,10 +96,14 @@ public class CharacterModelData : MonoBehaviour
     }
     public void Jump()
     {
+        AccountForFall();
+        Body.Play("Jump");
+    }
+    public void AccountForFall()
+    {
         jumped = true;
         jumpmax = transform.position.y;
         jumplow = transform.position.y;
-        Body.Play("Jump");
     }
     void SetRotation()
     {

@@ -1,0 +1,1191 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - AnimationEvents
+    - Bullet
+    - CharacterModelData
+    - GM
+    - GunControl
+    - PixelateImageEffect
+    - WeaponData
+    Enhancer.Editor.dll:
+    - XT.Enhancer.Settings
+    - XT.Enhancer.Sidebar
+    Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.SceneViewGridManager
+    - UnityEditor.Tilemaps.TileDragAndDropManager
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+  sceneClasses:
+    Assets/RPG_FPS_game_assets_industrial/Map_v1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11692}
+    - Class: 114
+      Script: {instanceID: 11814}
+    - Class: 114
+      Script: {instanceID: 12116}
+    - Class: 114
+      Script: {instanceID: 12282}
+    - Class: 114
+      Script: {instanceID: 12718}
+    - Class: 114
+      Script: {instanceID: 12942}
+    - Class: 114
+      Script: {instanceID: 13128}
+    - Class: 114
+      Script: {instanceID: 13142}
+    - Class: 114
+      Script: {instanceID: 13370}
+    - Class: 114
+      Script: {instanceID: 13714}
+    - Class: 114
+      Script: {instanceID: 14078}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 144
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 238
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: c42672c997f8be6b1aa86a927ebea785
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 42bdfa9c19fa0e22d271f8494a697258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalPositionZ
+  - hash:
+      serializedVersion: 2
+      Hash: 626925ef558787b2d85c809198164d19
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 88e2c6f501bf5dead831a3e44c30de40
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Platform.Editor
+    className: BannerPlaceholder
+  - hash:
+      serializedVersion: 2
+      Hash: c567ada6c07ef421158ac9840555436d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Examples
+    className: LeanAnimation
+  - hash:
+      serializedVersion: 2
+      Hash: 172cfdd977ca8a6f32932932c2f0d2ee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: ImageEffectBase
+  - hash:
+      serializedVersion: 2
+      Hash: 773bffb517b005596ee23b6905687a43
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalEulerAngles
+  - hash:
+      serializedVersion: 2
+      Hash: d61ca890488f3d89fc2e6998328913e7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanJoinInsert
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RepeatFromCode
+  - hash:
+      serializedVersion: 2
+      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 438e840b6c09cbdb49fcc4a0e9e2b772
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformPosition
+  - hash:
+      serializedVersion: 2
+      Hash: 2f4090cc08bb2a14576885408fa90efa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll.Demo
+    className: DemoSceneController
+  - hash:
+      serializedVersion: 2
+      Hash: 1607e58a2c39b62f2d4a0acfdfcf1262
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTimeScale
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 499fd23433e68e265d153aa6b95d0047
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: abf1930d8126d0b2e00e9449129a0190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: d769f019a4217ce5afacd94b369351ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GM
+  - hash:
+      serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 675af4e4abdd223b23ff7ee4f4a0ea14
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll
+    className: RagdollBone
+  - hash:
+      serializedVersion: 2
+      Hash: af0e941e1f8849d60203113f5d4cacfc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: RPGCharacterAnims
+    className: RPGCharacterWeaponControllerFREE
+  - hash:
+      serializedVersion: 2
+      Hash: 234235b9fb07320d11497e08a726cc56
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: beb32a07dd690af1f470894c3aebf12b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: RPGCharacterAnims
+    className: IKHandsFREE
+  - hash:
+      serializedVersion: 2
+      Hash: 3eec3d0f549eeeef6b133056a3e1f91a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchoredPositionY
+  - hash:
+      serializedVersion: 2
+      Hash: a1fcc866397a836af63817d24343caca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Common.Examples
+    className: LeanDocumentation
+  - hash:
+      serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 2dabd3fc4fdd21baa7eb1815cf3d3ef4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanGraphicColor
+  - hash:
+      serializedVersion: 2
+      Hash: c1bc0ef4a7c4d7dee24242475d908d96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullet
+  - hash:
+      serializedVersion: 2
+      Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 0dbc3be398b4869a5c8d0d8481ee402c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: ebe4619662441f55c3364269bb5622e9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SuperCollisionType
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BruteForceMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 1e210184654eb42cdcfb0051f9212b16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Game.Combat
+    className: ActorRagdollLink
+  - hash:
+      serializedVersion: 2
+      Hash: e5a662e2ea6fc278bd41837326ae76b1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformRotate
+  - hash:
+      serializedVersion: 2
+      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 4ff55524d1e82993ff475637ac5d7d25
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AI
+  - hash:
+      serializedVersion: 2
+      Hash: 858ad19bda5cfaac86d7e3716da5f407
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: RPGCharacterAnims
+    className: RPGCharacterInputControllerFREE
+  - hash:
+      serializedVersion: 2
+      Hash: 80f21f9e22987893daabd02cf2209567
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Game.Combat
+    className: Actor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: ec89c088ecbdeae79810165b30bb98e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchorMax
+  - hash:
+      serializedVersion: 2
+      Hash: d941ab6dd93d37ffdf2277f2ea2375a0
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: e42df03a00dc2c71afedf0af09f062e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalRotation
+  - hash:
+      serializedVersion: 2
+      Hash: 755aa9308df9cb5ec0a491ba4f5f09a5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: Bloom
+  - hash:
+      serializedVersion: 2
+      Hash: 15b05eacffe39e7450c6344cec41cc6c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanCanvasGroupBlocksRaycasts
+  - hash:
+      serializedVersion: 2
+      Hash: 773bffb517b005596ee23b6905687a43
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformEulerAngles
+  - hash:
+      serializedVersion: 2
+      Hash: 371b41d83ab082ebf4295b8c6b53e6ee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WeaponData
+  - hash:
+      serializedVersion: 2
+      Hash: aba7b2852ef61d175dd9602e7723d5e5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 230f7b5038f49d457dbcc3c455c71d9a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: ScreenSpaceAmbientObscurance
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 0da877ad61f6f92a3d18e7ff69459997
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanInsert
+  - hash:
+      serializedVersion: 2
+      Hash: 303ad70ce203ad874efe2965d0fbcff9
+    assemblyName: Unity.Analytics.Tracker.dll
+    namespaceName: UnityEngine.Analytics
+    className: AnalyticsEventTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 7fb9de8dcf73854b6b328eca1f7a6e6d
+    assemblyName: Unity.Analytics.Tracker.dll
+    namespaceName: UnityEngine.Analytics
+    className: AnalyticsTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Game.Combat
+    className: CannonBall
+  - hash:
+      serializedVersion: 2
+      Hash: cc4274b586df3c02688bac01b88bd16c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 99ccdc335ab6ab11c24e05039f42ee96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformPivotY
+  - hash:
+      serializedVersion: 2
+      Hash: b8a5e8091ab0b8861d2add371082c5e0
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 99ccdc335ab6ab11c24e05039f42ee96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformPivotX
+  - hash:
+      serializedVersion: 2
+      Hash: 6e8dbe2baf0c228a586cd6d3d2ef5e49
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll.Demo
+    className: CameraHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 2519bfb3a825f477b6867e8e2a15d629
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll.Demo
+    className: Rotator
+  - hash:
+      serializedVersion: 2
+      Hash: 135f200ed215b4ab62976f28b14fd0ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SimpleStateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: b3ab2106268377ffe25dd18ac23dca28
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: b57385816852c6e2fbdf9c2c3b832e02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanCanvasGroupInteractable
+  - hash:
+      serializedVersion: 2
+      Hash: 8c3f818f5f0e62ac5e15d04d1ac20277
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 3a28aa1b6a241d053beaca5eee7a911f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: RPGCharacterAnims
+    className: GUIControlsFREE
+  - hash:
+      serializedVersion: 2
+      Hash: 42bdfa9c19fa0e22d271f8494a697258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformPositionY
+  - hash:
+      serializedVersion: 2
+      Hash: 419a974ae383b81389f1d6bb5a235268
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll
+    className: TriggerDetector
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Analytics.Editor.dll
+    namespaceName: UnityEditor.Analytics
+    className: AnalyticsEventTrackerEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 86cfcd24b9fc59be9240f6811ea3b2b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: ScreenOverlay
+  - hash:
+      serializedVersion: 2
+      Hash: 9d9ca7cccf74c75f6b195c46cf3e3897
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition
+    className: LeanTransition
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 4e194829a35aa19b7596029d08064165
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanCanvasGroupAlpha
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Math3d
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 9b3e602795c48a4c00a49d2ac9d8a210
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GunControl
+  - hash:
+      serializedVersion: 2
+      Hash: 060508d3d8b9b02f14226c6f4d5eb3a6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchorMin
+  - hash:
+      serializedVersion: 2
+      Hash: da0ff986b708f2d00d7aa1121b2b0012
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll
+    className: RagdollProfile
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Monetization.dll
+    namespaceName: UnityEngine.Monetization
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 4fd8bf02e3089425d3502e26c44ba31a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 30603da4a0908d7dc09d0272a56081c9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll.Demo
+    className: AIControl
+  - hash:
+      serializedVersion: 2
+      Hash: e42df03a00dc2c71afedf0af09f062e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformRotation
+  - hash:
+      serializedVersion: 2
+      Hash: f84d945e5e1ca985698660fc26e9657f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 0c20c3a657596b97343e2b3636d32fb7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll.Demo
+    className: CharacterMovementRagdollLink
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SuperStateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: PostEffectsHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 4326d1e3ad2be563855e0ee0cac8ddb9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Common.Examples
+    className: LeanCircuit
+  - hash:
+      serializedVersion: 2
+      Hash: 73437ea0e6a35ab838665ace8823e96b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanAudioSourceVolume
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AnimationEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 5f594bb5861b922f9191f0bc2e093577
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraController
+  - hash:
+      serializedVersion: 2
+      Hash: 1a9e52e2ff472238deaebe06595ba637
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: ScreenSpaceAmbientOcclusion
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 9263dba5ef7369c79a7560f1de0104a1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanMaterialColor
+  - hash:
+      serializedVersion: 2
+      Hash: d0ec4daefd329c5ea75e565c364bd88b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanSpriteRendererColor
+  - hash:
+      serializedVersion: 2
+      Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 4c91c7234b655547806e71ce56e16d88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchoredPosition
+  - hash:
+      serializedVersion: 2
+      Hash: 1184c8df9058f2ee37bde5a8709d9b3f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Examples
+    className: LeanAnimationKeyPress
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 35a9693c388776aaf487636491a20f11
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: e1300922cc039f41ab46a47f4cb05898
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a105e641910b141bffb1b3dd9d0eb1c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanGameObjectSetActive
+  - hash:
+      serializedVersion: 2
+      Hash: c74beaec4fa4accd83ceebf807017b73
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll.Demo
+    className: PlayerControl
+  - hash:
+      serializedVersion: 2
+      Hash: f090e0c4b2c5c9f0cde019ad4e20032d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BSPTree
+  - hash:
+      serializedVersion: 2
+      Hash: 42bdfa9c19fa0e22d271f8494a697258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalPositionY
+  - hash:
+      serializedVersion: 2
+      Hash: 2318e4390ff9ea042afdc0583c3e9070
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformPivot
+  - hash:
+      serializedVersion: 2
+      Hash: 564363b71973ff9b7c6dafd1d3a1fcfb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Common.Examples
+    className: LeanLinkTo
+  - hash:
+      serializedVersion: 2
+      Hash: 83540cc1c8ca8130c1d73cb8a25d1a02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanJoin
+  - hash:
+      serializedVersion: 2
+      Hash: fdf80050087ad81b476e2be242946239
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Examples
+    className: LeanAnimationRepeater
+  - hash:
+      serializedVersion: 2
+      Hash: 51ea7d22d97363b4a27ec6c69a1d3593
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformSizeDelta
+  - hash:
+      serializedVersion: 2
+      Hash: 648239c3a5e95f13a5977b4ea25ca438
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll.Demo
+    className: CharacterMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 30e7f79f8ad7c952281ecbad415ffec1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterModelData
+  - hash:
+      serializedVersion: 2
+      Hash: 09eae5a1a7bcd7ef91ee47e07752d772
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformSetAsLastSibling
+  - hash:
+      serializedVersion: 2
+      Hash: 8001a5f7502aab37e42206da015e6914
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: Unity.Analytics.DataPrivacy.dll
+    namespaceName: UnityEngine.Analytics
+    className: DataPrivacyButton
+  - hash:
+      serializedVersion: 2
+      Hash: 82fa046aa9efa49c6a613713c447cc65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanJoinDelay
+  - hash:
+      serializedVersion: 2
+      Hash: 2fde151a1d7e7e7fd29e909ab9b580d5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalScale
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: ApplicationQuit
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools
+    className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 42bdfa9c19fa0e22d271f8494a697258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformPositionZ
+  - hash:
+      serializedVersion: 2
+      Hash: 71e38fb7d9a5131a6fbf33d485a994fe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll
+    className: RagdollControllerProfile
+  - hash:
+      serializedVersion: 2
+      Hash: 889b801c1a7538ec3a088b5e43b1eb6c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll
+    className: Ragdoll
+  - hash:
+      serializedVersion: 2
+      Hash: bbac40a1480feb9b48e01287a3776b69
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanDelay
+  - hash:
+      serializedVersion: 2
+      Hash: 82af3f7c59437e49d9ebf553b0920fff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalScaleXY
+  - hash:
+      serializedVersion: 2
+      Hash: 438e840b6c09cbdb49fcc4a0e9e2b772
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalPosition
+  - hash:
+      serializedVersion: 2
+      Hash: 38b08a887a876e9c826dee55fc7daca8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Gravity
+  - hash:
+      serializedVersion: 2
+      Hash: 0267e9c853a8f88924478d2391ebfcf5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanEvent
+  - hash:
+      serializedVersion: 2
+      Hash: d791aa6007fa3640be1164ea75bb087d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 64c77d9c80900b8e11d0a885e8e5c0bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Game.Combat
+    className: Damageable
+  - hash:
+      serializedVersion: 2
+      Hash: 2b9536cf389ab64d6b272da0bd809dfa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanMaterialFloat
+  - hash:
+      serializedVersion: 2
+      Hash: 3eec3d0f549eeeef6b133056a3e1f91a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchoredPositionX
+  - hash:
+      serializedVersion: 2
+      Hash: fdc124dcd73aa38f7a19ae31f8dbbf58
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: RPGCharacterAnims
+    className: RPGCharacterControllerFREE
+  - hash:
+      serializedVersion: 2
+      Hash: 21d73eda81c18eacd2c91ad5dfaf2e32
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: f147652a9a20c948fbededed6e9a9ed1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanPlaySound
+  - hash:
+      serializedVersion: 2
+      Hash: 3165968ba45c74472d279ba04455fccb
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Inventory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: PostEffectsBase
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayModeRunnerCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 42bdfa9c19fa0e22d271f8494a697258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalPositionX
+  - hash:
+      serializedVersion: 2
+      Hash: 42bdfa9c19fa0e22d271f8494a697258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformPositionX
+  - hash:
+      serializedVersion: 2
+      Hash: 4f4d6294c326e74dc4565637f2fe0b61
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTime
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 9a06a01b761c2c000f95280f6509ab4c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll
+    className: RagdollController
+  - hash:
+      serializedVersion: 2
+      Hash: c67d6bd624f282436fb7f3261e1ac6ab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanMaterialVector
+  - hash:
+      serializedVersion: 2
+      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 8649814970b42d345b89944b862453cc
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestRunner.Utils
+    className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: b832ab50b63008474ad695a709e1bd9a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanImageFillAmount
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner
+    className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 2aeeec1b1a144c469cd2d37776bc2315
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: a68b277d44f7617579505c2abab5e520
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformTranslate
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 761c71fe565631b7b05616cf39a1a258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SuperCharacterController
+  - hash:
+      serializedVersion: 2
+      Hash: aa88ae22474df55295327e4ee99e5a24
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: f09320ddeeb6aa0df53515b59d20361d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: RPGCharacterAnims
+    className: RPGCharacterMovementControllerFREE
+  - hash:
+      serializedVersion: 2
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 2c2f2e5e7818a04dae3834806cf308cf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DynamicRagdoll
+    className: RigidbodyHangPoint
+  - hash:
+      serializedVersion: 2
+      Hash: a325152ad9563ed900af221c132fea36
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: CoroutineExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 856323e587d6c6392db643131ac3ee48
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PixelateImageEffect
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 8cc4b25d269bb18a5faaac40cc69eefd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanQueue
+  - hash:
+      serializedVersion: 2
+      Hash: 3165d54eee0d0545cc6427833e3d97c8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParticleMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParticleCollision
+  - hash:
+      serializedVersion: 2
+      Hash: 44e660673da5f91267c6f82549829bce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GunShoot
+  - hash:
+      serializedVersion: 2
+      Hash: bb8814741d7085ebb3d19a1a11769619
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DecalDestroyer
+  - hash:
+      serializedVersion: 2
+      Hash: 8429f5e2e74458d387d20325476dffbf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GunAim
+  - hash:
+      serializedVersion: 2
+      Hash: 58e68364412c67eae2bdb4954be2dcc2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Readme
+  - hash:
+      serializedVersion: 2
+      Hash: 939895993e33a5e257bd14c4f195b1b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExtinguishableFire
+  platform: 19
+  scenePathNames:
+  - Assets/RPG_FPS_game_assets_industrial/Map_v1.unity
+  playerPath: C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/BUILD/WPLTS2D.exe

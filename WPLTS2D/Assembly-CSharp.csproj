@@ -86,6 +86,7 @@
      <Compile Include="Assets\DynamicRagdoll\Scripts\Utils\RigidbodyHangPoint.cs" />
      <Compile Include="Assets\DynamicRagdoll\Scripts\Utils\TriggerDetector.cs" />
      <Compile Include="Assets\DynamicRagdoll\Scripts\Utils\VelocityTracker.cs" />
+     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\GameConfig.cs" />
      <Compile Include="Assets\GunControl.cs" />
      <Compile Include="Assets\Imported\RPG Character Animation Pack FREE\Code\CameraController.cs" />
@@ -186,6 +187,13 @@
      <Compile Include="Assets\Scripts\GM.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\Shared\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\WeaponData.cs" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -269,6 +277,7 @@
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Imported\BodyGuards\ReadMe.txt.txt" />
+     <None Include="Assets\Shared\Shaders\SurfaceShader_VC.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Imported\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
@@ -823,9 +832,6 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Monetization">
  <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
@@ -840,9 +846,6 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/there/Documents/GitHub/WPLTS2D/WPLTS2D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>

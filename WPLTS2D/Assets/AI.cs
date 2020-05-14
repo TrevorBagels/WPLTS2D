@@ -39,6 +39,11 @@ public class AI : MonoBehaviour
         Vector3 target = startpoint + new Vector3(Random.Range(-wanderDist / 2, wanderDist / 2), 0, 0);
         GoTo(target);
     }
+    public void OnSeeTarget()
+    {
+        //aim and fire
+
+    }
     // Update is called once per frame
     void Update()
     {

@@ -49,7 +49,7 @@ Shader "Hidden/Pixelation"
 				i.uv = round(i.uv * pixelScaling) / pixelScaling;
 				fixed4 col = tex2D(_MainTex, i.uv);
 				// just invert the colors
-				int pow = 40;
+				int pow = 30;
 				col.r = floor(100*col.r / pow) * pow/100;
 				col.g = floor(100*col.g / pow) * pow / 100;
 				col.b = floor(100*col.b / pow) * pow / 100;
