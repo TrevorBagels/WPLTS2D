@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     float cspeed;
     float hormov;
     Conf.PlayerConfig config;
+    float timestuck = 0f;
+    Vector3 stuckpos;
     void Awake()
     {
         config = FindObjectOfType<GM>().config.Player;
@@ -33,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void JumpStuff()
     {
-        if(Input.GetButtonDown("Jump") && anim.IsGrounded())
+        if (Input.GetButtonDown("Jump") && anim.IsGrounded())
         {
             //check if we're trying to vault over something
             RaycastHit hit;
@@ -51,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
             anim.Jump();
         }
         //crouch if we're stationary
-        if(Input.GetButton("Roll") && !anim.Moving)
+        if (Input.GetButton("Roll") && !anim.Moving)
         {
             anim.Body.SetBool("Crouching", true);
         }
@@ -88,16 +90,26 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         //align camera
-        if(Camera != null)
-            Camera.position = Vector3.Lerp(Camera.position, new Vector3(transform.position.x, transform.position.y, -zoom)+cameraOffset, Time.deltaTime * 10);
+        if (Camera != null)
+            Camera.position = Vector3.Lerp(Camera.position, new Vector3(transform.position.x, transform.position.y, -zoom) + cameraOffset, Time.deltaTime * 10);
         //deal with movement
         if (!CanMove) //don't move if you can't move. 
             return;
         //initialize important variables
         bool grounded = anim.IsGrounded();
+        if (!grounded && Vector3.Distance(stuckpos, transform.position) < .001f)
+            timestuck += Time.deltaTime;
+        else
+            timestuck = 0f;
+        stuckpos = transform.position;
+        if (timestuck > .25f)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, Speed.y);
+            timestuck = 0f;
+        }
         float dir = GetDir();
 
-        if(grounded)//only modify horizontal movement if we're on the ground
+        if (grounded)//only modify horizontal movement if we're on the ground
             hormov = Input.GetAxis("Horizontal");
         //if we're vaulting over something
         if (anim.Body.GetCurrentAnimatorStateInfo(0).IsName("Vault"))
@@ -108,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
         }
         rb.isKinematic = false;
         JumpStuff();
-        if(grounded)
+        if (grounded)
         {
             cspeed = Speed.x;//cspeed = current speed. set it to the walking speed
             if (Input.GetButton("Run"))

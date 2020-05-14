@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    bool hit = false;
+    int hits = 0;
+    public int maxHits = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,26 +13,30 @@ public class Bullet : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log(col.gameObject);
-        if (hit)
+        if (hits >= maxHits)
         {
             Destroy(gameObject);
             return;
         }
-        hit = true;
-        if(col.transform.GetComponentInParent<AI>())
+        hits += 1;
+        if (col.transform.GetComponentInParent<AI>())
         {
             col.transform.GetComponentInParent<CharacterModelData>().Die();
-            foreach(Rigidbody rb in col.transform.root.GetComponentsInChildren<Rigidbody>())
+            foreach (Rigidbody rb in col.transform.root.GetComponentsInChildren<Rigidbody>())
             {
-                rb.AddExplosionForce(40, transform.position - transform.forward*2, 1f, 0f, ForceMode.Impulse);
+                rb.AddExplosionForce(40, transform.position - transform.forward * 2, 1f, 0f, ForceMode.Impulse);
             }
         }
-        Destroy(gameObject);
+        if (hits >= maxHits)
+            Destroy(gameObject);
+        GameObject g = Instantiate(Resources.Load<GameObject>("Prefabs/BloodStream"));
+        g.transform.position = transform.position;
+        g.transform.rotation = transform.rotation;
+        g.transform.parent = transform;
     }
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
